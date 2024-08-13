@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: crud-products
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/inventory_management
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+
+
